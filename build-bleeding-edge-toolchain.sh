@@ -1192,8 +1192,8 @@ buildPi() {
 			--enable-languages=c,c++ \
 			--with-headers=yes"
 	buildGdb \
-		${buildNative} \
-		${installNative} \
+		${buildFolder} \
+		${installFolder} \
 		"" \
 		"--build=${hostTriplet} --host=${triplet} --with-python=yes" \
 		""
